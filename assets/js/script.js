@@ -52,6 +52,22 @@ document.addEventListener('visibilitychange',
         }
     });
 
+    /**
+ * HEADER
+ * active header when window scroll down to 100px
+ */
+
+/* ===== HEADER REVEAL WHEN SCROLL DOWN TO 100px ===== */
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+});
+
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const revealElements = document.querySelectorAll("[data-reveal]");
 const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");

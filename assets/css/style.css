@@ -3,7 +3,6 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-
   /*========== Colors ==========*/
   --white: hsla(0, 0%, 100%, 1);
   --white_a8: hsla(0, 0%, 100%, 0.08);
@@ -21,8 +20,8 @@
   --vegas-gold: hsl(45, 54%, 58%);
 
   /*========== Font and typography ==========*/
-  --ff-manrope: 'Manrope', sans-serif;
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-manrope: "Manrope", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
 
   --fs-1: 3.6rem;
   --fs-2: 3.2rem;
@@ -56,7 +55,6 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
-
 }
 
 /*==================== BASE ====================*/
@@ -150,7 +148,6 @@ body.nav-active {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
 }
-
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
@@ -472,7 +469,6 @@ body.nav-active {
   opacity: 0.8;
 }
 
-
 /*==================== HERO ====================*/
 
 .hero {
@@ -524,7 +520,6 @@ body.nav-active {
   align-items: center;
   gap: 12px;
 }
-
 
 /*==================== SEARCH ====================*/
 .search-bar {
@@ -578,7 +573,6 @@ body.nav-active {
   margin-block-start: 5px;
 }
 
-
 .overlay {
   position: fixed;
   inset: 0;
@@ -595,6 +589,48 @@ body.nav-active {
 }
 
 /*==================== ABOUT ====================*/
+
+.about .wrapper {
+  display: grid;
+  gap: 50px;
+  margin-block-end: 70px;
+}
+
+.progress-list .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 4px;
+}
+
+.progress-item:not(:last-child) {
+  margin-block-end: 16px;
+}
+
+.progress {
+  background-color: var(--raisin-black_a6);
+  height: 6px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: inherit;
+}
+
+.about-card {
+  text-align: center;
+}
+
+.about-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.about-card .card-title {
+  margin-block: 16px 10px;
+}
 
 /*==================== SKILLS ====================*/
 
@@ -628,7 +664,6 @@ body.nav-active {
   line-height: 1.3;
   margin-bottom: 7px;
 }
-
 
 .timeline-list span {
   color: var(--vegas-gold);
@@ -664,8 +699,75 @@ body.nav-active {
   line-height: 1.6;
 }
 
-
 /*==================== PROJECTS ====================*/
+
+.project {
+  border-block: 1px solid var(--cadet-blue-crayola_a20);
+}
+
+.project .title-wrapper {
+  margin-block-end: 40px;
+}
+
+.project .btn {
+  margin-block-start: 24px;
+}
+
+.project .grid-list {
+  gap: 40px;
+}
+
+.project-card {
+  --padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: var(--radius-8);
+  overflow: hidden;
+}
+
+.project-card-t1 .card-content {
+  padding: var(--padding);
+}
+
+.project-card-t2 .card-content {
+  padding: var(--padding);
+}
+
+.project-card-t1 {
+  padding-block-end: 0;
+}
+
+.project :is(.project-card-t2) {
+  gap: 0;
+}
+
+.project-card .card-tag {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.project-card .card-title {
+  margin-block: 16px;
+}
+
+.project-card .card-text {
+  margin-block-end: 20px;
+}
+
+.project-card .btn-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.project-card .btn-text:is(:hover, :focus-visible) {
+  gap: 10px;
+}
 
 /*==================== EXPERIENCE ====================*/
 .experience .timeline {
@@ -975,7 +1077,6 @@ textarea.input-field {
  */
 
 @media (min-width: 575px) {
-
   /**
    * REUSED STYLE
    */
@@ -986,90 +1087,50 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-
   /**
-   * EXPERIENCE
+   * PROJECT
    */
 
-  /* .experience {
-    min-height: 80vh;
+  .project-card {
+    --padding: 68px;
   }
-
-  .experience .timeline {
-    margin-top: 2rem;
-  }
-
-  .experience .timeline::after {
-    left: 31px;
-  }
-
-  .experience .container {
-    width: 100%;
-    padding-left: 8rem;
-    padding-right: 2rem;
-  }
-
-  .experience .container::after {
-    font-size: 2.2rem;
-  }
-
-  .experience .container::before {
-    left: 61px;
-    border: medium solid #0ef01a;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #12d604 transparent transparent;
-  }
-
-  .experience .left::after {
-    left: 15px;
-  }
-
-  .experience .right::after {
-    left: 15px;
-  }
-
-  .experience .right {
-    left: 0%;
-  } */
 
   .morebtn {
     margin-top: 3rem;
   }
-}
 
-/**
+
+  /**
    * CONTACT
    */
 
-.contact-card {
-  padding: 68px;
-}
+  .contact-card {
+    padding: 68px;
+  }
 
-/**
+  /**
    * FOOTER
    */
 
-.footer-top {
-  grid-template-columns: repeat(3, 1fr);
+  .footer-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / 4;
+  }
+
+  .footer-text {
+    max-width: 400px;
+    margin-block-end: 20px;
+  }
 }
-
-.footer-brand {
-  grid-column: 1 / 4;
-}
-
-.footer-text {
-  max-width: 400px;
-  margin-block-end: 20px;
-}
-
-
 
 /**
  * responsive for large than 768px screen
  */
 
 @media (min-width: 768px) {
-
   /**
    * REUSED STYLE
    */
@@ -1081,6 +1142,31 @@ textarea.input-field {
   .section-text {
     --fs-5: 2rem;
   }
+
+  /**
+   * ABOUT
+   */
+
+  .about .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /**
+   * PROJECT
+   */
+
+  .project .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .project .btn {
+    min-width: max-content;
+  }
+
 
   /**
    * CONTACT
@@ -1095,7 +1181,6 @@ textarea.input-field {
     align-items: center;
     gap: 20px;
   }
-
 
   /**
    * FOOTER
@@ -1112,34 +1197,24 @@ textarea.input-field {
   .footer-link {
     --fs-7: 1.7rem;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen
  */
 
 @media (min-width: 992px) {
-
   /**
    * CUSTOM PROPERTY
    */
 
   :root {
-
     /**
      * spacing
      */
 
     --section-padding: 20px;
-
   }
-
-
 
   /**
    * REUSED STYLE
@@ -1148,8 +1223,6 @@ textarea.input-field {
   .container {
     max-width: 960px;
   }
-
-
 
   /**
    * HEADER
@@ -1205,8 +1278,6 @@ textarea.input-field {
     border-radius: 0;
   }
 
-
-
   /**
    * HERO
    */
@@ -1230,6 +1301,53 @@ textarea.input-field {
   }
 
   /**
+   * ABOUT
+   */
+
+  .about .wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .about .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /**
+   * PROJECT
+   */
+
+  .project .grid-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+  }
+
+  .project .grid-list>li:nth-child(-n+2) {
+    grid-column: 1 / 3;
+  }
+
+  .project-card-t1 {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  :is(.project-card-t1) .card-content {
+    width: 33.33%;
+  }
+
+  :is(.project-card-t1) .card-banner {
+    width: 66.66%;
+  }
+
+  .project-card-t1 .card-content {
+    padding-block-end: var(--padding);
+  }
+
+  .card-content {
+    order: 1;
+  }
+
+  /**
    * CONTACT
    */
 
@@ -1238,16 +1356,13 @@ textarea.input-field {
     align-items: center;
     gap: 90px;
   }
-
 }
-
 
 /**
  * responsive for large than 1200px screen
  */
 
 @media (min-width: 1200px) {
-
   /**
    * REUSED STYLE
    */
@@ -1255,6 +1370,14 @@ textarea.input-field {
   .container,
   .header {
     max-width: 1140px;
+  }
+
+  /**
+   * ABOUT
+   */
+
+  .about .grid-list {
+    gap: 50px;
   }
 
   /**
@@ -1277,19 +1400,13 @@ textarea.input-field {
     grid-column: auto;
     padding-inline-end: 100px;
   }
-
 }
-
-
-
-
 
 /**
  * responsive for large than 1400px screen
  */
 
 @media (min-width: 1400px) {
-
   /**
    * REUSED STYLE
    */
@@ -1298,8 +1415,6 @@ textarea.input-field {
   .header {
     max-width: 1320px;
   }
-
-
 
   /**
    * HERO
@@ -1313,4 +1428,16 @@ textarea.input-field {
     --fs-5: 2.4rem;
   }
 
+
+  /**
+   * ABOUT
+   */
+
+  .about .wrapper {
+    gap: 100px;
+  }
+
+  .about .grid-list {
+    gap: 60px;
+  }
 }
