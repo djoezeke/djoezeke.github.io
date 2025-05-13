@@ -1,773 +1,924 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Sackey Ezekiel Etrue, portfolio, Ezekiel, portfolio website, personal portfolio"
+    />
+    <meta
+      name="description"
+      content="Welcome to Ezekiel's Portfolio. Software Developer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Sackey Ezekiel Etrue, portfolio, Ezekiel, portfolio website, personal portfolio" />
-  <meta name="description" content="Welcome to Ezekiel's Portfolio. Software Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-png"
+    />
 
-  <!-- Favicon -->
-  <link id="favicon" rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png" />
-  <!-- - preload images -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
-  <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+    <!-- - preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
 
-  <title>Portfolio | Sackey Ezekeil Etrue</title>
-</head>
+    <title>djoezeke | Sackey Ezekiel Etrue</title>
+  </head>
 
-<body>
-  <!-- header starts -->
-  <header class="header" data-header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="40" height="40" alt="Blogy logo" />
-      </a>
+  <body>
+    <!-- header starts -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="40"
+            height="40"
+            alt="djoezeke | logo"
+          />
+        </a>
 
-      <nav class="navbar" data-navbar>
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" width="64" height="24" alt="Djoezeke home" />
-          </a>
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a class="navbar-link" href="#home">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#about">About</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#skills">Skills</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#education">Education</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#projects">Projects</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#experience">Experience</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
-
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
-        </div>
-
-        <ul class="social-list">
-          <li>
-            <a href="https://twitter.com/djoezeke/" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="64"
+                height="24"
+                alt="djoezeke | logo"
+              />
             </a>
-          </li>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
 
-          <li>
-            <a href="https://facebook.com/djoezeke/" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#home">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#about">About</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#skills">Skills</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#education">Education</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#projects">Projects</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#experience">Experience</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#contact">Contact</a>
+            </li>
+          </ul>
 
-          <li>
-            <a href="https://linkedin.com/in/djoezeke/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
+          <ul class="social-list">
+            <li>
+              <a href="https://twitter.com/djoezeke/" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="https://instagram.com/djoezeke/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <li>
+              <a href="https://facebook.com/djoezeke/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtube.com/djoezeke/" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
+            <li>
+              <a href="https://linkedin.com/in/djoezeke/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
-    </div>
-  </header>
-  <!-- header ends -->
+            <li>
+              <a href="https://instagram.com/djoezeke/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
 
-  <!-- main ends -->
-  <main class="main">
-    <article>
-      <!-- hero section starts -->
-      <section class="section hero" id="home" aria-label="home">
-        <div class="container">
-          <!-- <div id="particles-js"></div> -->
+            <li>
+              <a href="https://youtube.com/djoezeke/" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
 
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.jpg" width="560" height="540" alt="Djoezeke" class="w-100"
-              data-reveal="top" />
+            <li>
+              <a href="https://github.com/djoezeke/" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-            <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s" />
-          </figure>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
 
-          <div class="hero-content">
-            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm djoezeke Software Designer & Developer.
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <!-- header ends -->
 
-            </h1>
+    <!-- main ends -->
+    <main class="main">
+      <article>
+        <!-- hero section starts -->
+        <section class="section hero" id="home" aria-label="home">
+          <div class="container">
+            <!-- <div id="particles-js"></div> -->
 
-            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Sackey Ezekiel Etrue, a freelance Software Designer &
-              Developer based in Ghana. I’m very fasinated by what Computers
-              can do.
-            </p>
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.jpg"
+                width="560"
+                height="540"
+                alt="djoezeke | banner"
+                class="w-100"
+                data-reveal="top"
+              />
 
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <img
+                src="./assets/images/hero-shape.svg"
+                width="203"
+                height="91"
+                alt="250+ Projects Done"
+                class="shape"
+                data-reveal="top"
+                data-reveal-delay="0.25s"
+              />
+            </figure>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                I'm djoezeke Software Designer & Developer.
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Hello! I'm Sackey Ezekiel Etrue, a freelance Software Designer &
+                Developer based in Ghana. I’m very fasinated by what Computers
+                can do.
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#" class="btn btn-primary">See My Works</a>
+
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- hero section ends -->
+        <!-- hero section ends -->
 
-      <!-- about section start -->
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
+        <!-- about section start -->
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <h2 class="h2 section-title">What I Do?</h2>
 
-          <div class="wrapper">
+                <p class="section-text">
+                  Duis mollis est commodo luctus nisi erat porttitor ligula,
+                  eget lacinia odio sem nec elit. Nullam quis risus eget urna
+                  mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
+                  Praesent commodo cursus magna, vel scelerisque nisl.
+                </p>
+              </div>
 
-            <div data-reveal="left">
-              <h2 class="h2 section-title">What I Do?</h2>
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>AI Development</p>
 
-              <p class="section-text">
-                Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis
-                risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
-                magna, vel scelerisque nisl.
-              </p>
+                    <span class="span">40 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 40%; background-color: #c7b1dd"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Web/API Development</p>
+
+                    <span class="span">80 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 80%; background-color: #8caeec"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Software Development</p>
+
+                    <span class="span">85 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 85%; background-color: #b0d4c1"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Game Development</p>
+
+                    <span class="span">90 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 90%; background-color: #e3a6b6"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            <ul class="progress-list" data-reveal="right">
+            <ul class="grid-list">
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-1.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web design icon"
+                    />
+                  </div>
 
-              <li class="progress-item">
+                  <h3 class="h4 card-title">Web Design</h3>
 
-                <div class="label-wrapper">
-                  <p>AI Development</p>
-
-                  <span class="span">40 %</span>
+                  <p class="card-text">
+                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                    mi porta gravida at eget metus. Cras justo cum sociis
+                    natoque magnis.
+                  </p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 40%; background-color: #c7b1dd"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-1.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="mobile design icon"
+                    />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>Web/API Development</p>
+                  <h3 class="h4 card-title">Game Design</h3>
 
-                  <span class="span">80 %</span>
+                  <p class="card-text">
+                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                    mi porta gravida at eget metus. Cras justo cum sociis
+                    natoque magnis.
+                  </p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-3.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web development icon"
+                    />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>Software Development</p>
+                  <h3 class="h4 card-title">Development</h3>
 
-                  <span class="span">85 %</span>
+                  <p class="card-text">
+                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                    mi porta gravida at eget metus. Cras justo cum sociis
+                    natoque magnis.
+                  </p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.75s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-3.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web seo icon"
+                    />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>Game Development</p>
+                  <h3 class="h4 card-title">AI</h3>
 
-                  <span class="span">90 %</span>
+                  <p class="card-text">
+                    Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                    mi porta gravida at eget metus. Cras justo cum sociis
+                    natoque magnis.
+                  </p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
-                </div>
-
               </li>
-
             </ul>
+          </div>
+        </section>
+        <!-- about section ends -->
 
+        <!-- skills section start -->
+        <section class="skills section" id="skills">
+          <div class="container"></div>
+        </section>
+        <!-- skills section ends -->
+
+        <!-- education section start -->
+        <section class="education section" id="education">
+          <div class="container">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+            <br />
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Accra Technical University
+                </h4>
+
+                <span>Jan 2025 — Present</span>
+
+                <p class="timeline-text"></p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Mount Sinai Senior High School
+                </h4>
+
+                <span>March 2021 — October 2023</span>
+
+                <p class="timeline-text"></p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Olabs Junior High school</h4>
+
+                <span>2017 — 2020</span>
+
+                <p class="timeline-text"></p>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <!-- education section ends -->
+
+        <!-- experience section start -->
+        <section class="experience section" id="experience">
+          <div class="container">
+            <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+
+            <div class="timeline">
+              <div class="container right">
+                <div class="content">
+                  <div class="tag">
+                    <h2>Freelance</h2>
+                  </div>
+                  <div class="desc">
+                    <h3>Software Development | Self-Employed</h3>
+                    <p>May 2022 - Present</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container left">
+                <div class="content">
+                  <div class="tag">
+                    <h2>Freelance</h2>
+                  </div>
+                  <div class="desc">
+                    <h3>Web Development | Freelance</h3>
+                    <p>May 2022 - Present</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- experience section ends -->
+
+        <!-- projects section start -->
+        <section
+          class="section project"
+          id="projects"
+          aria-labelledby="project-label"
+        >
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">
+                  Latest Projects
+                </h2>
+
+                <p class="section-text">
+                  Check out some of my latest projects with creative ideas.
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-secondary">See All Projects</a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="project-card project-card-t1"
+                  style="background-color: #f8f5fb"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #a07cc5">Debug Library</p>
+
+                    <h3 class="h3 card-title">CProfiler</h3>
+
+                    <p class="card-text">
+                      Maecenas faucibus mollis interdum sed posuere consectetur
+                      est at lobortis. Scelerisque id ligula porta felis euismod
+                      semper. Fusce dapibus tellus cursus.
+                    </p>
+
+                    <a href="#" class="btn-text" style="color: #a07cc5">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/project.png"
+                      width="650"
+                      height="370"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-t1"
+                  style="background-color: #f1f5fd"
+                >
+                  <div class="card-content" data-reveal="right">
+                    <p class="card-tag" style="color: #3f78e0">Text Editor</p>
+
+                    <h3 class="h3 card-title">Notebook</h3>
+
+                    <p class="card-text">
+                      Maecenas faucibus mollis interdum sed posuere consectetur
+                      est at lobortis. Scelerisque id ligula porta felis euismod
+                      semper. Fusce dapibus tellus cursus.
+                    </p>
+
+                    <a href="#" class="btn-text" style="color: #3f78e0">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img
+                      src="./assets/images/project.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-t2"
+                  style="background-color: #f5faf7"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #7cb798">Game Design</p>
+
+                    <h3 class="h3 card-title">Tetrix Game</h3>
+
+                    <p class="card-text">
+                      Maecenas faucibus mollis interdum sed posuere porta
+                      consectetur cursus porta lobortis. Scelerisque id ligula
+                      felis.
+                    </p>
+
+                    <a href="#" class="btn-text" style="color: #7cb798">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/project.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-t2"
+                  style="background-color: #fcf4f6"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #d16b86">Game Design</p>
+
+                    <h3 class="h3 card-title">Clasical 2048 Game</h3>
+
+                    <p class="card-text">
+                      Maecenas faucibus mollis interdum sed posuere consectetur
+                      est at lobortis. Scelerisque id ligula porta felis euismod
+                      semper.
+                    </p>
+
+                    <a href="#" class="btn-text" style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/project.png"
+                      width="620"
+                      height="370"
+                      loading="lazy"
+                      alt="Mobile Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- projects section ends -->
+
+        <!-- contact section start -->
+        <section class="contacts section" id="contacts">
+          <div class="container"></div>
+        </section>
+        <!-- contact section ends -->
+
+        <section class="section contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/icon-5.svg"
+                    width="44"
+                    height="44"
+                    loading="lazy"
+                    alt="envelop icon"
+                  />
+                </div>
+
+                <h2 class="h2 section-title">
+                  If you like what you see, let's work together.
+                </h2>
+
+                <p class="section-text">
+                  I bring rapid solutions to make the life of my clients easier.
+                  Have any questions? Reach out to me from this contact form and
+                  I will get back to you shortly.
+                </p>
+              </div>
+
+              <form action="" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- main ends -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="129"
+                height="40"
+                alt="djoezeke | logo"
+              />
+            </a>
+
+            <p class="footer-text">Gift of God</p>
           </div>
 
-          <ul class="grid-list">
-
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
-                </div>
-
-                <h3 class="h4 card-title">Web Design</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
+          <ul class="footer-list">
+            <li>
+              <p class="h5">Social</p>
             </li>
 
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
+            <li class="footer-list-item">
+              <ion-icon name="logo-facebook"></ion-icon>
 
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
-                </div>
-
-                <h3 class="h4 card-title">Game Design</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
+              <a
+                href="https://facebook.com/djoezeke/"
+                class="footer-link hover:underline"
+                >Facebook</a
+              >
             </li>
 
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
+            <li class="footer-list-item">
+              <ion-icon name="logo-twitter"></ion-icon>
 
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
-                    alt="web development icon">
-                </div>
-
-                <h3 class="h4 card-title">Development</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
+              <a
+                href="https://twitter.com/djoezeke/"
+                class="footer-link hover:underline"
+                >Twitter</a
+              >
             </li>
 
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
+            <li class="footer-list-item">
+              <ion-icon name="logo-linkedin"></ion-icon>
 
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web seo icon">
-                </div>
-
-                <h3 class="h4 card-title">AI</h3>
-
-                <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras
-                  justo cum sociis natoque magnis.
-                </p>
-
-              </div>
+              <a
+                href="https://linkedein.com/in/djoezeke/"
+                class="footer-link hover:underline"
+                >LinkedIn</a
+              >
             </li>
 
+            <li class="footer-list-item">
+              <ion-icon name="logo-github"></ion-icon>
+
+              <a
+                href="https://github.com/djoezeke/"
+                class="footer-link hover:underline"
+                >Github</a
+              >
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <a
+                href="https://instagram.com/djoezeke/"
+                class="footer-link hover:underline"
+                >Instagram</a
+              >
+            </li>
           </ul>
 
-        </div>
-      </section>
-      <!-- about section ends -->
-
-      <!-- skills section start -->
-      <section class="skills section" id="skills">
-        <div class="container"></div>
-      </section>
-      <!-- skills section ends -->
-
-      <!-- education section start -->
-      <section class="education section" id="education">
-        <div class="container">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-          <br>
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Accra Technical University</h4>
-
-              <span>2024 — 2028</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mount Sinai Senior High School</h4>
-
-              <span>2020 — 2023</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Olabs Junior High school</h4>
-
-              <span>2017 — 2020</span>
-
-              <p class="timeline-text">
-              </p>
-
-            </li>
-
-          </ol>
-
-        </div>
-      </section>
-      <!-- education section ends -->
-
-      <!-- experience section start -->
-      <section class="experience section" id="experience">
-        <div class="container">
-          <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-          <div class="timeline">
-
-            <div class="container right">
-              <div class="content">
-                <div class="tag">
-                  <h2>Freelance</h2>
-                </div>
-                <div class="desc">
-                  <h3>Software Development | Self-Employed</h3>
-                  <p>May 2022 - Present</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <div class="tag">
-                  <h2>Freelance</h2>
-                </div>
-                <div class="desc">
-                  <h3>Web Development | Freelance</h3>
-                  <p>May 2022 - Present</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        </div>
-      </section>
-      <!-- experience section ends -->
-
-
-      <!-- projects section start -->
-      <section class="section project" id="projects" aria-labelledby="project-label">
-        <div class="container">
-
-          <div class="title-wrapper" data-reveal="top">
-
-            <div>
-              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
-
-              <p class="section-text">
-                Check out some of my latest projects with creative ideas.
-              </p>
-            </div>
-
-            <a href="#" class="btn btn-secondary">See All Projects</a>
-
-          </div>
-
-          <ul class="grid-list">
-
+          <ul class="footer-list">
             <li>
-              <div class="project-card project-card-t1" style="background-color: #f8f5fb">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class="card-tag" style="color: #a07cc5">Debug Library</p>
-
-                  <h3 class="h3 card-title">CProfiler</h3>
-
-                  <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
-                  </p>
-
-                  <a href="#" class="btn-text" style="color: #a07cc5">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project.png" width="650" height="370" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
-
-              </div>
+              <p class="h5">About</p>
             </li>
 
             <li>
-              <div class="project-card project-card-t1" style="background-color: #f1f5fd">
-
-                <div class="card-content" data-reveal="right">
-
-                  <p class=" card-tag" style="color: #3f78e0">Text Editor</p>
-
-                  <h3 class="h3 card-title">Notebook</h3>
-
-                  <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper. Fusce dapibus tellus cursus.
-                  </p>
-
-                  <a href="#" class="btn-text" style="color: #3f78e0">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
-
-              </div>
+              <a href="#" class="footer-link hover:underline">About</a>
             </li>
 
             <li>
-              <div class="project-card project-card-t2" style="background-color: #f5faf7">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #7cb798">Game Design</p>
-
-                  <h3 class="h3 card-title">Tetrix Game</h3>
-
-                  <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere porta consectetur cursus porta lobortis. Scelerisque
-                    id ligula felis.
-                  </p>
-
-                  <a href="#" class="btn-text" style="color: #7cb798">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project.png" width="600" height="367" loading="lazy" alt="Web Design"
-                    class="w-100">
-                </figure>
-
-              </div>
+              <a href="#" class="footer-link hover:underline">About</a>
             </li>
 
             <li>
-              <div class="project-card project-card-t2" style="background-color: #fcf4f6">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #d16b86">Game Design</p>
-
-                  <h3 class="h3 card-title">Clasical 2048 Game</h3>
-
-                  <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis. Scelerisque id ligula
-                    porta felis euismod semper.
-                  </p>
-
-                  <a href="#" class="btn-text" style="color: #d16b86">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project.png" width="620" height="370" loading="lazy" alt="Mobile Design"
-                    class="w-100">
-                </figure>
-
-              </div>
+              <a href="#" class="footer-link hover:underline">About</a>
             </li>
 
+            <li>
+              <a href="#" class="footer-link hover:underline">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">About</a>
+            </li>
           </ul>
 
-        </div>
-      </section>
+          <ul class="footer-list">
+            <li>
+              <p class="h5">Blog & News</p>
+            </li>
 
-      <!-- projects section ends -->
+            <li>
+              <a href="#" class="footer-link hover:underline">News</a>
+            </li>
 
-      <!-- contact section start -->
-      <section class="contacts section" id="contacts">
-        <div class="container"></div>
-      </section>
-      <!-- contact section ends -->
+            <li>
+              <a href="#" class="footer-link hover:underline">News</a>
+            </li>
 
-      <section class="section contact" aria-label="contact">
-        <div class="container">
-          <div class="contact-card">
-            <div class="contact-content" data-reveal="left">
-              <div class="card-icon">
-                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon" />
-              </div>
+            <li>
+              <a href="#" class="footer-link hover:underline">News</a>
+            </li>
 
-              <h2 class="h2 section-title">
-                If you like what you see, let's work together.
-              </h2>
+            <li>
+              <a href="#" class="footer-link hover:underline">News</a>
+            </li>
 
-              <p class="section-text">
-                I bring rapid solutions to make the life of my clients easier.
-                Have any questions? Reach out to me from this contact form and
-                I will get back to you shortly.
-              </p>
-            </div>
+            <li>
+              <a href="#" class="footer-link hover:underline">News</a>
+            </li>
+          </ul>
 
-            <form action="" class="contact-form" data-reveal="right">
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field" />
+          <ul class="footer-list">
+            <li>
+              <p class="h5">Portfolio</p>
+            </li>
 
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field" />
-              </div>
+            <li>
+              <a href="#" class="footer-link hover:underline">Portfolio</a>
+            </li>
 
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+            <li>
+              <a href="#" class="footer-link hover:underline">Portfolio</a>
+            </li>
 
-              <button type="submit" class="btn btn-secondary">
-                Send message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </article>
-  </main>
-  <!-- main ends -->
+            <li>
+              <a href="#" class="footer-link hover:underline">Portfolio</a>
+            </li>
 
-  <!-- footer start -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top section">
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" width="129" height="40" alt="Blogy logo" />
-          </a>
+            <li>
+              <a href="#" class="footer-link hover:underline">Portfolio</a>
+            </li>
 
-          <p class="footer-text">Gift of God</p>
+            <li>
+              <a href="#" class="footer-link hover:underline">Portfolio</a>
+            </li>
+          </ul>
         </div>
 
-        <ul class="footer-list">
-          <li>
-            <p class="h5">Social</p>
-          </li>
-
-          <li class="footer-list-item">
-            <ion-icon name="logo-facebook"></ion-icon>
-
-            <a href="https://facebook.com/djoezeke/" class="footer-link hover:underline">Facebook</a>
-          </li>
-
-          <li class="footer-list-item">
-            <ion-icon name="logo-twitter"></ion-icon>
-
-            <a href="https://twitter.com/djoezeke/" class="footer-link hover:underline">Twitter</a>
-          </li>
-
-          <li class="footer-list-item">
-            <ion-icon name="logo-linkedin"></ion-icon>
-
-            <a href="https://linkedein.com/in/djoezeke/" class="footer-link hover:underline">LinkedIn</a>
-          </li>
-
-          <li class="footer-list-item">
-            <ion-icon name="logo-github"></ion-icon>
-
-            <a href="https://github.com/djoezeke/" class="footer-link hover:underline">Github</a>
-          </li>
-
-          <li class="footer-list-item">
-            <ion-icon name="logo-instagram"></ion-icon>
-
-            <a href="https://instagram.com/djoezeke/" class="footer-link hover:underline">Instagram</a>
-          </li>
-        </ul>
-
-        <ul class="footer-list">
-          <li>
-            <p class="h5">About</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">About</a>
-          </li>
-        </ul>
-
-        <ul class="footer-list">
-          <li>
-            <p class="h5">Blog & News</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">News</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">News</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">News</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">News</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">News</a>
-          </li>
-        </ul>
-
-        <ul class="footer-list">
-          <li>
-            <p class="h5">Portfolio</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link hover:underline">Portfolio</a>
-          </li>
-        </ul>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; Sackey Ezekiel Etrue | Portfolio 2025. Published by
+            <a href="#" class="copyright-link hover:underline">djoezeke</a>.
+          </p>
+        </div>
       </div>
+    </footer>
+    <!-- footer start -->
 
-      <div class="footer-bottom">
-        <p class="copyright">
-          &copy; Sackey Ezekiel Etrue | Portfolio 2025. Published by
-          <a href="#" class="copyright-link hover:underline">djoezeke</a>.
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer start -->
+    <!-- scroll top btn -->
+    <a href="#home" aria-label="ScrollTop" id="scroll-top"></a>
+    <!-- scroll back to top -->
 
-  <!-- scroll top btn -->
-  <a href="#home" aria-label="ScrollTop" id="scroll-top"></a>
-  <!-- scroll back to top -->
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-  <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- typed.js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- typed.js cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- particle.js links -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
 
-  <!-- particle.js links -->
-  <script src="assets/js/particles.min.js"></script>
-  <script src="assets/js/app.js"></script>
+    <!-- - ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- - ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- vanilla tilt.js links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- vanilla tilt.js links -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
-    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- scroll reveal anim -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
