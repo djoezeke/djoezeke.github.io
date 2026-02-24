@@ -1,110 +1,128 @@
-$(document).ready(function () {
-  $("#menu").click(function () {
-    $(this).toggleClass("fa-times");
-    $(".navbar").toggleClass("nav-toggle");
-  });
+const header = document.querySelector("[data-header]");
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
+const overlay = document.querySelector("[data-overlay]");
+const scrollTopBtn = document.querySelector("#scroll-top");
 
-  $(window).on("scroll load", function () {
-    $("#menu").removeClass("fa-times");
-    $(".navbar").removeClass("nav-toggle");
+const toggleNav = () => {
+  if (!navbar || !overlay) {
+    return;
+  }
 
-    if (window.scrollY > 60) {
-      document.querySelector("#scroll-top").classList.add("active");
-    } else {
-      document.querySelector("#scroll-top").classList.remove("active");
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("nav-active");
+};
+
+navTogglers.forEach((btn) => {
+  btn.addEventListener("click", toggleNav);
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (!navbar || !overlay) {
+      return;
     }
 
-    // scroll spy
-    $("section").each(function () {
-      let height = $(this).height();
-      let offset = $(this).offset().top - 200;
-      let top = $(window).scrollTop();
-      let id = $(this).attr("id");
-
-      if (top > offset && top < offset + height) {
-        $(".navbar ul li a").removeClass("active");
-        $(".navbar").find(`[href="#${id}"]`).addClass("active");
-      }
-    });
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.classList.remove("nav-active");
   });
+});
 
-  // smooth scrolling
-  $('a[href*="#"]').on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate(
-      {
-        scrollTop: $($(this).attr("href")).offset().top,
-      },
-      500,
-      "linear"
+const handleScroll = () => {
+  if (header) {
+    header.classList.toggle("active", window.scrollY > 60);
+  }
+
+  if (scrollTopBtn) {
+    scrollTopBtn.classList.toggle("active", window.scrollY > 420);
+  }
+};
+
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("load", handleScroll);
+
+const sectionLinks = document.querySelectorAll(".navbar-link[data-nav-link]");
+const sections = Array.from(document.querySelectorAll("section[id]"));
+
+const highlightNav = () => {
+  const scrollPosition = window.scrollY + 140;
+  let currentSection = sections[0];
+
+  for (const section of sections) {
+    if (scrollPosition >= section.offsetTop) {
+      currentSection = section;
+    }
+  }
+
+  if (!currentSection) {
+    return;
+  }
+
+  sectionLinks.forEach((link) => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === `#${currentSection.id}`,
     );
   });
+};
+
+window.addEventListener("scroll", highlightNav);
+window.addEventListener("load", highlightNav);
+
+const smoothAnchors = document.querySelectorAll('a[href^="#"]');
+
+smoothAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
+    const href = anchor.getAttribute("href");
+    if (!href || href === "#") {
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 });
 
-/* ===== TITLE CHANGE ===== */
-document.addEventListener("visibilitychange", function () {
-  if (document.visibilityState === "visible") {
-    document.title = "Sackey Ezekiel Etrue | Portfolio";
-    $("#favicon").attr("href", "assets/images/favicon.png");
-  } else {
-    document.title = "Sackey Ezekiel Etrue | Portfolio";
-    $("#favicon").attr("href", "assets/images/favicon.png");
-  }
-});
-
-/**
- * HEADER
- * active header when window scroll down to 100px
- */
-
-/* ===== HEADER REVEAL WHEN SCROLL DOWN TO 100px ===== */
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-  } else {
-    header.classList.remove("active");
-  }
-});
-
-/* ===== SCROLL REVEAL ANIMATION ===== */
 const revealElements = document.querySelectorAll("[data-reveal]");
 const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+).matches;
 
-const reveal = function () {
-  for (let i = 0, len = revealElements.length; i < len; i++) {
-    if (
-      revealElements[i].getBoundingClientRect().top <
-      window.innerHeight / 1.2
-    ) {
-      revealElements[i].classList.add("revealed");
-    }
-  }
-};
+revealDelayElements.forEach((element) => {
+  element.style.transitionDelay = element.dataset.revealDelay || "0s";
+});
 
-for (let i = 0, len = revealDelayElements.length; i < len; i++) {
-  revealDelayElements[i].style.transitionDelay =
-    revealDelayElements[i].dataset.revealDelay;
+if (prefersReducedMotion) {
+  revealElements.forEach((element) => element.classList.add("revealed"));
+} else if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          observerInstance.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 },
+  );
+
+  revealElements.forEach((element) => observer.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("revealed"));
 }
 
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
+const baseTitle = document.title;
 
-/* ===== NAV TOGGLE ANIMATION ===== */
-const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-const navToggler = document.querySelector("[data-nav-toggler]");
-
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  this.classList.toggle("active");
-};
-
-const closeNavbar = function () {
-  navbar.classList.remove("active");
-  navToggler.classList.remove("active");
-};
-
-addEventOnElem(navbarLinks, "click", closeNavbar);
-addEventOnElem(navToggler, "click", toggleNavbar);
+document.addEventListener("visibilitychange", () => {
+  document.title = baseTitle;
+});

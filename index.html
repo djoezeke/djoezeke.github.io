@@ -5,16 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Sackey Ezekiel Etrue, portfolio, Ezekiel" />
-  <meta name="description" content="Welcome to Ezekiel's Portfolio. Software Developer" />
+  <meta name="keywords" content="Sackey Ezekiel Etrue, computer scientist, portfolio, research, software engineer" />
+  <meta name="description"
+    content="Sackey Ezekiel Etrue is a computer scientist and software engineer building research-driven systems, products, and experiences." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Favicon -->
   <link id="favicon" rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png" />
@@ -23,7 +24,7 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
   <link rel="preload" as="image" href="./assets/images/Blog.svg" />
 
-  <title>Sackey Ezekiel Etrue | Portfolio</title>
+  <title>Sackey Ezekiel Etrue | Computer Scientist</title>
 </head>
 
 <body>
@@ -46,25 +47,31 @@
 
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a class="navbar-link" href="#home">Home</a>
+            <a class="navbar-link" data-nav-link href="#home">Home</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#about">About</a>
-          </li>
-          <!-- <li class="navbar-item">
-            <a class="navbar-link" href="#skills">Skills</a>
+            <a class="navbar-link" data-nav-link href="#about">About</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#education">Education</a>
+            <a class="navbar-link" data-nav-link href="#skills">Skills</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#experience">Experience</a>
-          </li> -->
-          <li class="navbar-item">
-            <a class="navbar-link" href="#projects">Projects</a>
+            <a class="navbar-link" data-nav-link href="#projects">Projects</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#contact">Contact</a>
+            <a class="navbar-link" data-nav-link href="#resume">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link href="#events">Events</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link href="#blog">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link href="#news">News</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -134,19 +141,23 @@
 
           <div class="hero-content">
             <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm djoezeke Software Designer & Developer.
+              Computer Scientist building ambitious systems and human-centered software.
             </h1>
 
             <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Sackey Ezekiel Etrue, a freelance Software Designer &
-              Developer based in Ghana. I’m very fasinated by Computers, with a
-              particular focus on desktop, web, and game development.
+              Hello! I'm Sackey Ezekiel Etrue, a computer scientist and software engineer in Ghana. I design
+              resilient platforms, research-driven products, and developer tools that translate complex ideas
+              into reliable, measurable impact.
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#" class="btn btn-primary">See My Works</a>
+              <a href="#projects" class="btn btn-primary">View Projects</a>
 
-              <a href="#" class="btn btn-secondary">Contact Me</a>
+              <a href="resume.html" class="btn btn-secondary">Resume Page</a>
+
+              <a href="assets/resume/Sackey-Ezekiel-Etrue-Resume.pdf" class="btn btn-ghost" download>
+                Download Resume
+              </a>
             </div>
           </div>
         </div>
@@ -157,22 +168,32 @@
       <!-- about section start -->
       <section class="about section" id="about">
         <div class="container">
-          <h2 class="h1 section-title">About Me?</h2>
+          <h2 class="h1 section-title">About Me</h2>
 
           <p>
-            I’m a Senior Software Engineer. I started coding at the age of 12
-            and started my career at Ticketfly after college. I was the first
-            Junior Engineer that the company ever hired, and I became a Senior
-            Engineer in less than 2 years. I helped create various
-            applications in both iOS and multiple front-end projects. I also
-            worked to improve onboarding experiences, interviewed and
-            recruited candidates, and created style guides for the company.
-            I’ve also worked at companies such as Eventbrite and Pandora. I’ve
-            created several programs in the companies I’ve worked at including
-            a mentorship group that paired senior and junior engineers in a
-            structured way to advance both careers. I’m a published O’Reilly
-            author and speaker.
+            I work at the intersection of computer science, product design, and engineering. My focus spans
+            distributed systems, applied AI, and human-computer interaction. I enjoy building high-performing
+            platforms, experimenting with new research ideas, and turning prototypes into robust products.
           </p>
+
+          <div class="stats-grid" data-reveal="bottom">
+            <div class="stat-card">
+              <p class="stat-number">9+ yrs</p>
+              <p class="stat-label">Research + engineering practice</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">30+ projects</p>
+              <p class="stat-label">Shipped for startups & labs</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">12 talks</p>
+              <p class="stat-label">Conferences and meetups</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number">5 publications</p>
+              <p class="stat-label">Peer reviewed research</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- about section ends -->
@@ -182,68 +203,67 @@
         <div class="container">
           <div class="wrapper">
             <div data-reveal="left">
-              <h2 class="h1 section-title">Skills?</h2>
+              <h2 class="h1 section-title">Skills</h2>
 
               <p class="section-text">
-                Duis mollis est commodo luctus nisi erat porttitor ligula,
-                eget lacinia odio sem nec elit. Nullam quis risus eget urna
-                mollis ornare vel. Nulla vitae elit libero, a pharetra augue.
-                Praesent commodo cursus magna, vel scelerisque nisl.
+                A research-driven engineer with hands-on depth in systems, AI, and cloud-native delivery. I work
+                across the stack, with a focus on rigorous evaluation, responsible deployment, and elegant UX for
+                complex tooling.
               </p>
             </div>
 
             <ul class="progress-list" data-reveal="right">
               <li class="progress-item">
                 <div class="label-wrapper">
-                  <p>AI Development</p>
+                  <p>AI + Applied ML</p>
 
-                  <span class="span">40 %</span>
+                  <span class="span">78 %</span>
                 </div>
 
                 <div class="progress">
-                  <div class="progress-fill" style="width: 40%; background-color: #c7b1dd"></div>
+                  <div class="progress-fill" style="width: 78%; background-color: #e08a5a"></div>
                 </div>
               </li>
 
               <li class="progress-item">
                 <div class="label-wrapper">
-                  <p>Web/API Development</p>
-
-                  <span class="span">80 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #8caeec"></div>
-                </div>
-              </li>
-
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>Software Development</p>
-
-                  <span class="span">85 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
-                </div>
-              </li>
-
-              <li class="progress-item">
-                <div class="label-wrapper">
-                  <p>Game Development</p>
+                  <p>Web + API Engineering</p>
 
                   <span class="span">90 %</span>
                 </div>
 
                 <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #e3a6b6"></div>
+                  <div class="progress-fill" style="width: 90%; background-color: #5aa7e0"></div>
+                </div>
+              </li>
+
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>Systems + Architecture</p>
+
+                  <span class="span">86 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 86%; background-color: #6fb48f"></div>
+                </div>
+              </li>
+
+              <li class="progress-item">
+                <div class="label-wrapper">
+                  <p>Research Prototyping</p>
+
+                  <span class="span">82 %</span>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-fill" style="width: 82%; background-color: #d4837a"></div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <h2 class="h2 section-title">What I Do?</h2>
+          <h2 class="h2 section-title">What I Do</h2>
 
           <ul class="grid-list">
             <li data-reveal="bottom">
@@ -252,12 +272,10 @@
                   <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" />
                 </div>
 
-                <h3 class="h4 card-title">Web Design</h3>
+                <h3 class="h4 card-title">Human-Centered Systems</h3>
 
                 <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                  mi porta gravida at eget metus. Cras justo cum sociis
-                  natoque magnis.
+                  Design systems that make complex computation feel intuitive, accessible, and fast for end users.
                 </p>
               </div>
             </li>
@@ -269,12 +287,10 @@
                     alt="mobile design icon" />
                 </div>
 
-                <h3 class="h4 card-title">Game Design</h3>
+                <h3 class="h4 card-title">Applied AI + ML</h3>
 
                 <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                  mi porta gravida at eget metus. Cras justo cum sociis
-                  natoque magnis.
+                  Ship ML-driven products with clear evaluation, observability, and safety guardrails.
                 </p>
               </div>
             </li>
@@ -286,12 +302,10 @@
                     alt="web development icon" />
                 </div>
 
-                <h3 class="h4 card-title">Development</h3>
+                <h3 class="h4 card-title">Cloud + Infrastructure</h3>
 
                 <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                  mi porta gravida at eget metus. Cras justo cum sociis
-                  natoque magnis.
+                  Architect resilient backends with scalable APIs, data pipelines, and secure delivery.
                 </p>
               </div>
             </li>
@@ -302,12 +316,10 @@
                   <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="web seo icon" />
                 </div>
 
-                <h3 class="h4 card-title">AI</h3>
+                <h3 class="h4 card-title">Research &amp; Publications</h3>
 
                 <p class="card-text">
-                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                  mi porta gravida at eget metus. Cras justo cum sociis
-                  natoque magnis.
+                  Translate new ideas into papers, prototypes, and public-facing tools.
                 </p>
               </div>
             </li>
@@ -322,32 +334,31 @@
           <div class="title-wrapper" data-reveal="top">
             <div>
               <h2 class="h1 section-title" id="project-label">
-                Latest Projects
+                Projects With Depth
               </h2>
 
               <p class="section-text">
-                Check out some of my latest projects with creative ideas.
+                Research prototypes, production platforms, and open-source tools that ship with rigor.
               </p>
             </div>
 
-            <a href="#" class="btn btn-secondary">See All Projects</a>
+            <a href="#projects" class="btn btn-secondary">More About Projects</a>
           </div>
 
           <ul class="grid-list">
             <li>
-              <div class="project-card project-card-t1" style="background-color: #f8f5fb">
+              <div class="project-card project-card-t1">
                 <div class="card-content" data-reveal="left">
-                  <p class="card-tag" style="color: #a07cc5">Debug Library</p>
+                  <p class="card-tag">Systems Research</p>
 
                   <h3 class="h3 card-title">CProfiler</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur
-                    est at lobortis. Scelerisque id ligula porta felis euismod
-                    semper. Fusce dapibus tellus cursus.
+                    A low-overhead performance profiler that pinpoints CPU hotspots and memory regressions in
+                    multithreaded workloads.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #a07cc5">
+                  <a href="#" class="btn-text">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -362,19 +373,17 @@
             </li>
 
             <li>
-              <div class="project-card project-card-t1" style="background-color: #f1f5fd">
+              <div class="project-card project-card-t1">
                 <div class="card-content" data-reveal="right">
-                  <p class="card-tag" style="color: #3f78e0">Text Editor</p>
+                  <p class="card-tag">Developer Tooling</p>
 
                   <h3 class="h3 card-title">Notebook</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur
-                    est at lobortis. Scelerisque id ligula porta felis euismod
-                    semper. Fusce dapibus tellus cursus.
+                    A real-time collaborative editor with CRDT sync, offline recovery, and custom markdown blocks.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #3f78e0">
+                  <a href="#" class="btn-text">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -389,19 +398,17 @@
             </li>
 
             <li>
-              <div class="project-card project-card-t2" style="background-color: #f5faf7">
+              <div class="project-card project-card-t2">
                 <div class="card-content" data-reveal="left">
-                  <p class="card-tag" style="color: #7cb798">Game Design</p>
+                  <p class="card-tag">Applied AI</p>
 
-                  <h3 class="h3 card-title">Tetrix Game</h3>
+                  <h3 class="h3 card-title">Atlas Forecast</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere porta
-                    consectetur cursus porta lobortis. Scelerisque id ligula
-                    felis.
+                    Demand forecasting engine for city-scale mobility, blending temporal models and causal signals.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #7cb798">
+                  <a href="#" class="btn-text">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -416,19 +423,17 @@
             </li>
 
             <li>
-              <div class="project-card project-card-t2" style="background-color: #fcf4f6">
+              <div class="project-card project-card-t2">
                 <div class="card-content" data-reveal="left">
-                  <p class="card-tag" style="color: #d16b86">Game Design</p>
+                  <p class="card-tag">Human-Computer Interaction</p>
 
-                  <h3 class="h3 card-title">Clasical 2048 Game</h3>
+                  <h3 class="h3 card-title">Signal Lab</h3>
 
                   <p class="card-text">
-                    Maecenas faucibus mollis interdum sed posuere consectetur
-                    est at lobortis. Scelerisque id ligula porta felis euismod
-                    semper.
+                    An interactive lab for real-time signal visualization, built for teaching and research demos.
                   </p>
 
-                  <a href="#" class="btn-text" style="color: #d16b86">
+                  <a href="#" class="btn-text">
                     <span class="span">See Project</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -446,9 +451,215 @@
       </section>
       <!-- projects section ends -->
 
+      <!-- resume section start -->
+      <section class="section resume" id="resume" aria-labelledby="resume-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h1 section-title" id="resume-label">Resume Highlights</h2>
+              <p class="section-text">
+                A snapshot of recent roles, research, and impact. Visit the resume page for full details.
+              </p>
+            </div>
+
+            <div class="resume-actions">
+              <a href="resume.html" class="btn btn-secondary">Open Resume</a>
+              <a href="assets/resume/Sackey-Ezekiel-Etrue-Resume.pdf" class="btn btn-ghost" download>
+                Download PDF
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-list resume-grid" data-reveal="bottom">
+            <div class="resume-card">
+              <p class="resume-meta">2023 - Present</p>
+              <h3 class="h3">Lead Computer Scientist</h3>
+              <p class="card-text">
+                Building trustworthy AI platforms, designing data systems, and mentoring cross-functional teams.
+              </p>
+            </div>
+            <div class="resume-card">
+              <p class="resume-meta">2021 - 2023</p>
+              <h3 class="h3">Research Engineer</h3>
+              <p class="card-text">
+                Prototyped multimodal models, published in peer-reviewed venues, and scaled inference pipelines.
+              </p>
+            </div>
+            <div class="resume-card">
+              <p class="resume-meta">2018 - 2021</p>
+              <h3 class="h3">Full-Stack Systems Engineer</h3>
+              <p class="card-text">
+                Shipped cloud-native platforms with observability, reliability, and secure delivery workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- resume section ends -->
+
+      <!-- events section start -->
+      <section class="section events" id="events" aria-labelledby="events-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h1 section-title" id="events-label">Events & Talks</h2>
+              <p class="section-text">Where I speak, mentor, and collaborate.</p>
+            </div>
+            <a href="#contact" class="btn btn-secondary">Invite Me</a>
+          </div>
+
+          <div class="grid-list events-grid" data-reveal="bottom">
+            <article class="event-card">
+              <p class="event-date">Apr 18, 2026</p>
+              <h3 class="h3">AI Reliability Summit</h3>
+              <p class="card-text">Keynote on audit-ready ML pipelines for mission-critical products.</p>
+              <a class="btn-text" href="#">
+                <span class="span">View Recap</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+            <article class="event-card">
+              <p class="event-date">Mar 02, 2026</p>
+              <h3 class="h3">Systems Guild Meetup</h3>
+              <p class="card-text">Workshop on profiling distributed systems under heavy load.</p>
+              <a class="btn-text" href="#">
+                <span class="span">Watch Talk</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+            <article class="event-card">
+              <p class="event-date">Jan 11, 2026</p>
+              <h3 class="h3">HCI Studio Series</h3>
+              <p class="card-text">Designing interfaces that make complex computation feel simple.</p>
+              <a class="btn-text" href="#">
+                <span class="span">Read Notes</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- events section ends -->
+
+      <!-- blog section start -->
+      <section class="section blog" id="blog" aria-labelledby="blog-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h1 section-title" id="blog-label">Blogs & Notes</h2>
+              <p class="section-text">Essays, research notes, and engineering playbooks.</p>
+            </div>
+            <a href="#" class="btn btn-secondary">Read All</a>
+          </div>
+
+          <div class="grid-list blog-grid" data-reveal="bottom">
+            <article class="blog-card">
+              <p class="blog-tag">Research</p>
+              <h3 class="h3">Evaluating LLM systems beyond accuracy</h3>
+              <p class="card-text">A field guide to stress testing generative systems with real users.</p>
+              <a class="btn-text" href="#">
+                <span class="span">Read Article</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+            <article class="blog-card">
+              <p class="blog-tag">Engineering</p>
+              <h3 class="h3">Designing resilient event pipelines</h3>
+              <p class="card-text">Patterns for reliability, backpressure, and graceful degradation.</p>
+              <a class="btn-text" href="#">
+                <span class="span">Read Article</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+            <article class="blog-card">
+              <p class="blog-tag">Leadership</p>
+              <h3 class="h3">Mentoring junior engineers at scale</h3>
+              <p class="card-text">Tactics for building mentorship programs that actually work.</p>
+              <a class="btn-text" href="#">
+                <span class="span">Read Article</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- blog section ends -->
+
+      <!-- news section start -->
+      <section class="section news" id="news" aria-labelledby="news-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h1 section-title" id="news-label">News & Updates</h2>
+              <p class="section-text">Recent releases, press, and milestones.</p>
+            </div>
+            <a href="#contact" class="btn btn-secondary">Get Updates</a>
+          </div>
+
+          <div class="news-grid" data-reveal="bottom">
+            <div class="news-card">
+              <div>
+                <p class="news-date">Feb 24, 2026</p>
+                <h3 class="h3">Released Atlas Forecast v2</h3>
+                <p class="card-text">Major upgrade with improved causal inference and faster model training.</p>
+              </div>
+              <span class="news-chip">Release</span>
+            </div>
+            <div class="news-card">
+              <div>
+                <p class="news-date">Jan 30, 2026</p>
+                <h3 class="h3">Featured in Ghana Tech Review</h3>
+                <p class="card-text">Interview on building resilient AI infrastructure in West Africa.</p>
+              </div>
+              <span class="news-chip">Press</span>
+            </div>
+            <div class="news-card">
+              <div>
+                <p class="news-date">Dec 18, 2025</p>
+                <h3 class="h3">Launched Signal Lab</h3>
+                <p class="card-text">An interactive learning environment now used by 4 universities.</p>
+              </div>
+              <span class="news-chip">Launch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- news section ends -->
+
       <!-- contact section start -->
-      <section class="contacts section" id="contacts">
-        <div class="container"></div>
+      <section class="section contact" id="contact" aria-labelledby="contact-label">
+        <div class="container">
+          <div class="contact-card" data-reveal="bottom">
+            <div>
+              <h2 class="h1 section-title" id="contact-label">Let's Collaborate</h2>
+              <p class="section-text">
+                Want to partner on research, engineering, or speaking? Share a brief and I will respond quickly.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <a class="contact-link" href="mailto:sackey@example.com">sackey@example.com</a>
+                </li>
+                <li>
+                  <a class="contact-link" href="https://www.linkedin.com/in/djoezeke/">LinkedIn</a>
+                </li>
+                <li>
+                  <a class="contact-link" href="https://github.com/djoezeke/">GitHub</a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+              <div class="input-wrapper">
+                <input class="input-field" type="text" name="name" placeholder="Name" required />
+                <input class="input-field" type="email" name="email" placeholder="Email" required />
+              </div>
+              <input class="input-field" type="text" name="subject" placeholder="Subject" required />
+              <textarea class="input-field" name="message" placeholder="Tell me about your project" required></textarea>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- contact section ends -->
 
@@ -461,7 +672,7 @@
     <div class="container">
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; Sackey Ezekiel Etrue | Portfolio 2025. Published by
+          &copy; Sackey Ezekiel Etrue | Portfolio 2026. Published by
           <a href="#" class="copyright-link hover:underline">djoezeke</a>.
         </p>
       </div>
@@ -470,13 +681,16 @@
   <!-- footer end -->
 
   <!-- scroll top btn -->
-  <a href="#home" aria-label="ScrollTop" id="scroll-top"></a>
+  <a href="#home" aria-label="Scroll to top" id="scroll-top">
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
   <!-- scroll back to top -->
 
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 
   <!-- - ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
